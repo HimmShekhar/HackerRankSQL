@@ -1,0 +1,14 @@
+Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+
+
+
+/*
+Enter your query here.
+*/
+
+Select 
+    distinct(City)
+From
+    Station
+Where
+    SUBSTRING(CITY,1,1) not in ('a','e','i','o','u','A','E','I','O','U');
